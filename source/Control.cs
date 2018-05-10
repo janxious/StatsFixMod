@@ -1,22 +1,20 @@
 ﻿
-using DynTechMod;
 using HBS.Logging;
 using Harmony;
-using System.IO;
 using System.Reflection;
+using DynModLib;
 
-// ReSharper disable InconsistentNaming
-namespace VisualHardpointLimits
+namespace StatsFixMod
 {
     public static class Control
     {
         public static Mod mod;
 
-        public static HardpointSettings settings = new HardpointSettings();
+        public static ModSettings settings = new ModSettings();
 
-        public static void OnInit(Mod mod)
+        public static void OnInit(string modDirectory)
         {
-            Control.mod = mod;
+            mod = new Mod(modDirectory);
             Logger.SetLoggerLevel(mod.Logger.Name, LogLevel.Log);
 
             mod.LoadSettings(settings);
@@ -28,17 +26,5 @@ namespace VisualHardpointLimits
             // or also under yourmod/log.txt
             mod.Logger.Log("Loaded " + mod.Name);
         }
-
-        public static string ManifestPath
-        {
-            get { return Path.Combine(mod.Directory, "VersionManifest.csv"); }
-        }
-    }
-
-    public class HardpointSettings : ModSettings
-    {
-        public bool allowLRMsInSmallerSlotsForAll = false;
-        public string[] allowLRMsInSmallerSlotsForMechs = { "atlas" };
-        public bool allowLRMsInLargerSlotsForAll = true;
     }
 }

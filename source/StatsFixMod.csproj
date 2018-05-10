@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4C0B103D-D164-45B2-98C8-DC599B50520E}</ProjectGuid>
+    <ProjectGuid>{599517CB-3973-4D93-8DAF-47AEF02209CB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BattleTechMod</RootNamespace>
-    <AssemblyName>BattleTechMod</AssemblyName>
+    <RootNamespace>StatsFixMod</RootNamespace>
+    <AssemblyName>StatsFixMod</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -20,6 +20,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>5</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -34,6 +35,9 @@
     <RunPostBuildEvent>Always</RunPostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DynTechMod">
+      <HintPath>..\..\DynTechMod.dll</HintPath>
+    </Reference>
     <Reference Include="0Harmony">
       <HintPath>..\..\..\BattleTech_Data\Managed\0Harmony.dll</HintPath>
       <Private>True</Private>
@@ -41,9 +45,6 @@
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\BattleTech_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>True</Private>
-    </Reference>
-    <Reference Include="DynTechMod">
-      <HintPath>..\..\DynTechMod.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -64,20 +65,8 @@
   <ItemGroup>
     <Compile Include="Control.cs" />
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="sorting\MechDefAdapter.cs" />
-    <Compile Include="sorting\MechDefRefreshInventoryPatch.cs" />
-    <Compile Include="sorting\MechHardpointRulesPatch.cs" />
-    <Compile Include="limits\MechLabLocationWidgetAdapter.cs" />
-    <Compile Include="stats\MechStatisticsRulesCalculateMovementStatPatch.cs" />
-    <Compile Include="stats\MechStatisticsRulesCalculateHeatEfficiencyStatPatch.cs" />
-    <Compile Include="utils\HardpointCounter.cs" />
-    <Compile Include="limits\MechLabLocationWidgetPatch.cs" />
-    <Compile Include="sorting\MechInitGameRepPatch.cs" />
-    <Compile Include="sorting\MechRepresentationSimGamePatch.cs" />
-    <Compile Include="manifest\VersionManifestUtilitiesPatch.cs" />
-    <Compile Include="limits\MechLabLocationWidgetPatchHelper.cs" />
-    <Compile Include="utils\VHLUtils.cs" />
-    <Compile Include="utils\WeaponComponentPrefabCalculator.cs" />
+    <Compile Include="MechStatisticsRulesCalculateMovementStatPatch.cs" />
+    <Compile Include="MechStatisticsRulesCalculateHeatEfficiencyStatPatch.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Settings.json" />

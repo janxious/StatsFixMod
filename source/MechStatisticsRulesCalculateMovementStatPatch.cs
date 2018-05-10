@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Linq;
 using BattleTech;
 using Harmony;
 using UnityEngine;
 
-namespace VisualHardpointLimits
+namespace StatsFixMod
 {
     [HarmonyPatch(typeof(MechStatisticsRules), "CalculateMovementStat")]
     public static class MechStatisticsRulesCalculateMovementStatPatch
