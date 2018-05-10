@@ -5,12 +5,12 @@ BattleTech mod (using ModTek and DynModLib) that fixes some of the stat summarie
 ** Warning: Uses the experimental BTML mod loader and ModTek **
 
 either
-* install BattleTechModTools using [BattleTechModInstaller](https://github.com/Mpstark/BattleTechModTools/releases)
+* install BattleTechModTools using [BattleTechModInstaller](https://github.com/CptMoore/BattleTechModTools/releases)
 
 or
 * install [BattleTechModLoader](https://github.com/Mpstark/BattleTechModLoader/releases) using [instructions here](https://github.com/Mpstark/BattleTechModLoader)
 * install [ModTek](https://github.com/Mpstark/ModTek/releases) using [instructions here](https://github.com/Mpstark/ModTek)
-* install [DynModLib](https://github.com/CptMoore/BattleTechModTools/releases) using [instructions here](https://github.com/CptMoore/BattleTechModTools)
+* install [DynModLib](https://github.com/CptMoore/DynModLib/releases) using [instructions here](https://github.com/CptMoore/DynModLib)
 
 ## Features
 
