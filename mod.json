@@ -1,5 +1,8 @@
 {
 	"Name": "StatsFixMod",
+	"Author": "CptMoore",
+	"Website": "https://github.com/CptMoore/StatsFixMod",
+
 	"DependsOn": ["DynModLib"],
 	"DLL": "StatsFixMod.dll",
 	"DLLEntryPoint": "StatsFixMod.Control.Start"
