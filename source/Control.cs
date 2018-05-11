@@ -12,7 +12,7 @@ namespace StatsFixMod
 
         public static ModSettings settings = new ModSettings();
 
-        public static void OnInit(string modDirectory)
+        public static void Start(string modDirectory, string json)
         {
             mod = new Mod(modDirectory);
             Logger.SetLoggerLevel(mod.Logger.Name, LogLevel.Log);

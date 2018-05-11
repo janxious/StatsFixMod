@@ -1,0 +1,5 @@
+{
+	"Name": "StatsFixMod",
+	"DLL": "StatsFixMod.dll",
+	"DLLEntryPoint": "StatsFixMod.Control.Start"
+}
