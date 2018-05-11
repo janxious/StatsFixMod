@@ -1,5 +1,6 @@
 {
 	"Name": "StatsFixMod",
+	"DependsOn": ["DynModLib"],
 	"DLL": "StatsFixMod.dll",
 	"DLLEntryPoint": "StatsFixMod.Control.Start"
 }
