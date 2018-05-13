@@ -68,6 +68,7 @@
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="MechStatisticsRulesCalculateMovementStatPatch.cs" />
     <Compile Include="MechStatisticsRulesCalculateHeatEfficiencyStatPatch.cs" />
+    <Compile Include="Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\mod.json" />
