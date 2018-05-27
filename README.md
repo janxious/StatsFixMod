@@ -19,7 +19,7 @@ or
 
 ## Download
 
-Downloads can be found on [github](https://github.com/CptMoore/StatsFixMod/releases).
+Downloads can be found on [github](https://github.com/CptMoore/StatsFixMod/).
 
 ## Install
 
